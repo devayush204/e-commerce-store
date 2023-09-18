@@ -1,3 +1,4 @@
+"use client"
 import axios from 'axios'
 import React, {  useState} from 'react'
 import Product from '../components/Product'
@@ -5,16 +6,16 @@ import Product from '../components/Product'
 const Home = () => {
     const [fetchData, setFetchData] = useState([])
     
-
+useEffect(() => {
          axios.get('https://fakestoreapi.com/products')
         .then((res) => {
             setFetchData(res.data)
             // console.log(res.data)
         })
-        // const click =()=>{
-        //     console.log(fetchData)
-        // }
-
+        const click =()=>{
+           console.log(fetchData)
+        }
+},[ ])
        
     
     
