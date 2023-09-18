@@ -22,7 +22,7 @@ useEffect(() => {
     return (
         <>
             <section className='py-16 mx-[60px] '>
-                {/* <button onClick={click} >asfkas</button> */}
+                <button onClick={click} >asfkas</button>
                     <div className=" grid gap-[30px] max-w-sm mx-auto md:max-w-none md:mx-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                         {
                             fetchData.map(products => {
